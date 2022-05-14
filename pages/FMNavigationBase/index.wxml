@@ -1,0 +1,31 @@
+<!-- pages/FMNavigationBase/index.wxml -->
+<view class="container">
+    <!-- 加载地图容器 -->
+    <canvas type="webgl" id="fengMap" style="width: 100%; height: 100%;" disable-scroll bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+        <!-- 楼层控件一 滚动型楼层控件 -->
+        <FMScrollGroupsControl id="scrollGroupsControl" wx:if="{{mapLoaded == true }}" focusGroupID="{{focusGroupID}}" groupIDs="{{mapGroupIDs}}" allLayer="{{isAllLayer}}" showBtnCount="3" bind:switchGroup="switchGroup" bind:switchLayers="switchLayers" />
+        <!-- 楼层控件二 按钮型楼层控件 -->
+        <!-- <FMButtonGroupsControl id="buttonGroupsControl" wx:if="{{mapLoaded == true }}" focusGroupID="{{focusGroupID}}" groupIDs="{{mapGroupIDs}}" showBtnCount="3" bind:switchGroup="switchGroup" /> -->
+        <!-- 2、3D控件 -->
+        <FMViewModeControl wx:if="{{mapLoaded == true }}" is3D="{{is3D}}" bind:changeMode="changeMode" />
+        <!-- 单、多楼层控件 -->
+        <!-- <FMAllLayerControl wx:if="{{mapLoaded == true }}" allLayer="{{isAllLayer}}" bind:switchLayers="switchLayers" /> -->
+    </canvas>
+    <!-- 2d画布 -->
+    <canvas type="2d" id="temp"></canvas>                                                                                                                                                                                                                                                                                                                                                                                           a                                                                                                                                                                                                                                                   2
+    <!-- 周边查询 -->
+    <view class="boundSearch" wx:if="{{mapLoaded}}">
+
+        <view class="boundSearch" >
+        <image src='/images/washromm_1.png' class="test" mode="widthFix" style='width:60rpx' bindtap="searchPublicPlace1"></image>
+        <view class="zhanwei"></view>
+        <image src='/images/louti.png' class="test" mode="widthFix" style='width:60rpx' bindtap="searchPublicPlace2"></image>
+        <view class="zhanwei"></view>
+        <image src='/images/exit.png' class="test" mode="widthFix" style='width:60rpx' bindtap="searchPublicPlace3"></image>
+        <view class="zhanwei"></view>
+        <image src='/images/go.png' class="test" mode="widthFix" style='width:60rpx' bindtap="searchPublicPlace4"></image>
+        </view>    
+
+    </view>    
+    
+</view>

@@ -1,0 +1,15 @@
+<!--pages/FMOverlayTextMarker/index.wxml-->
+<view class="container">
+    <!-- 加载地图容器 -->
+    <canvas type="webgl" id="fengMap" style="width: 100%; height: 100%;" disable-scroll bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
+    <!-- 2d画布 -->
+    <canvas type="2d" id="temp"></canvas>
+    <!-- 按钮组 -->
+    <view class="btnsGroup" wx:if="{{mapLoaded}}">
+        <button type="{{clickedBtn == 1 ? 'primary' : 'default'}}" size="mini" bindtap="addMarkerFunc" data-type="1">添加文字标注</button>
+        <button type="{{clickedBtn == 2 ? 'primary' : 'default'}}" size="mini" bindtap="changeMarkerFunc" data-type="2">改变文字标注</button>
+        <button type="{{clickedBtn == 3 ? 'primary' : 'default'}}" size="mini" bindtap="moveMarkerFunc" data-type="3">更新文字位置（动画）</button>
+        <button type="{{clickedBtn == 4 ? 'primary' : 'default'}}" size="mini" bindtap="changePosFunc" data-type="4">更新文字位置</button>
+        <button type="{{clickedBtn == 5 ? 'primary' : 'default'}}" size="mini" bindtap="deleteMarkerFunc" data-type="5">删除文字标注</button>
+    </view>
+</view>

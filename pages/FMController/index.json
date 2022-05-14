@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "UI控件",
+  "usingComponents": {
+    "FMScrollGroupsControl": "../../component/FMScrollGroupsControl/FMScrollGroupsControl",
+    "FMButtonGroupsControl": "../../component/FMButtonGroupsControl/FMButtonGroupsControl",
+    "FMViewModeControl": "../../component/FMViewModeControl/FMViewModeControl",
+    "FMAllLayerControl": "../../component/FMAllLayerControl/FMAllLayerControl"
+  }
+}

@@ -1,0 +1,17 @@
+<!-- pages/FMSearchAnalysisBound/index.wxml -->
+<view class="container">
+    <!-- 加载地图容器 -->
+    <canvas type="webgl" id="fengMap" style="width: 100%; height: 100%;" disable-scroll bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
+    <!-- 2d画布 -->
+    <canvas type="2d" id="temp"></canvas>
+    <!-- 周边查询 -->
+    <view class="boundSearch" wx:if="{{mapLoaded}}">
+        <text>半径：</text>
+        <input type="number" bindinput="bindInput" value="{{radius}}" />
+        <text>米</text>
+        <button type="default" size="mini" bindtap="searchByRadius">洗手间</button>
+        <button type="default" size="mini" bindtap="searchByRadius">直梯</button>
+        <button type="default" size="mini" bindtap="searchByRadius">紧急出口</button>
+
+    </view>
+</view>

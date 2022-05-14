@@ -1,0 +1,27 @@
+.boundSearch{
+  position: absolute;
+  left: 5%;
+  top: 20rpx;
+  /* width: 60%; */
+  height: 64rpx;
+  line-height: 64rpx;
+  z-index: 1;
+  top: 1150rpx;
+  display:flex;                    
+  justify-content: center;         
+  align-items:center;    
+}
+
+.test{
+  height:60rpx;
+  width:60rpx;
+  border-radius: 50%;
+  position:-ms-page;
+  top: 0rpx;
+  box-shadow: 0rpx 0rpx 2rpx 2rpx rgb(177, 175, 175);
+}
+
+.zhanwei{
+  height:30rpx;
+  width:30rpx;
+}

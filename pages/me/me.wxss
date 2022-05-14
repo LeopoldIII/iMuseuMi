@@ -1,0 +1,253 @@
+.button-area{
+    width : 100%;
+    height : 120px;
+    align-items: center;
+    justify-content: center;
+    position:-ms-page;
+    background-color: #730707;
+    border: 0 solid #730707;
+    margin: 0 auto;  
+}
+
+.circle_4{
+    width: 98%;
+    height: 60px;
+    position:-ms-page;
+    background-color: #e0e0e0;
+    border: 0 solid #DEC1C1;
+    border-radius: 0;
+    z-index: 1;
+    position:-ms-page;
+    top: -273rpx;
+    left: 0rpx;
+    box-shadow: 0rpx 0rpx 3rpx 5rpx rgb(97, 93, 93);
+  }
+  .circle_4_after{
+    width: 98%;
+    height: 60px;
+    position:-ms-page;
+    background-color: #828282;
+    border: 0 solid #DEC1C1;
+    border-radius: 0;
+    z-index: 1;
+    position:-ms-page;
+    top: -273rpx;
+    left: 0rpx;
+    box-shadow: 0rpx 0rpx 3rpx 5rpx rgb(97, 93, 93);
+  }
+  .circle_5{
+    width: 98%;
+    height: 60px;
+    position:-ms-page;
+    background-color: #e0e0e0;
+    border: 0 solid #DEC1C1;
+    border-radius: 0;
+    z-index: 1;
+    position:-ms-page;
+    top: -273rpx;
+    left: 0rpx;
+    box-shadow: 0rpx 0rpx 3rpx 5rpx rgb(97, 93, 93);
+  }
+  .circle_5_after{
+    width: 98%;
+    height: 60px;
+    position:-ms-page;
+    background-color: #828282;
+    border: 0 solid #DEC1C1;
+    border-radius: 0;
+    z-index: 1;
+    position:-ms-page;
+    top: -273rpx;
+    left: 0rpx;
+    box-shadow: 0rpx 0rpx 3rpx 5rpx rgb(97, 93, 93);
+  }
+
+  .lord_area{
+    width:100%;
+    height:600px;
+    align-items: center;
+    position:-ms-page;
+    justify-content: center;
+    background-color: #29c264;
+    border: 0 solid #557792;
+    margin: 0 auto;  
+  }
+  .block-area{
+    width : 250px;
+    height : 80px;
+    position:-ms-page;
+    background-color: #29c264;
+    border: 0 solid #0D6EBD;
+}
+
+
+.page-section-spacing{
+  margin-top: 30px;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 150px;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #cac7c7;
+  color: #353535;
+  font-size: 18px;
+  border-radius: 20px;
+  border-color: rgb(119, 88, 88);
+  border-width: 5rpx;
+  border-style:solid;
+}
+
+
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.demo-text-2:before{
+  content: '2';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #775151;
+  color: #353535;
+  font-size: 18px;
+}
+.demo-text-3:before{
+  content: '3';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-section{
+  background-color: #8A3815;
+  height:400;
+  position:-ms-page;
+  top: -20rpx;
+}
+
+.flex-wrp{
+  margin-top: 30px;
+  display:flex;
+}
+.flex-item{
+  width: 100px;
+  height: 150px;
+  font-size: 30px;
+  display:flex;  
+  justify-content:center;
+}
+.flex-item-V{
+  margin: 0 auto;
+  width: 360px;
+  height: 100px;
+}
+
+.touimage {
+  /* 居中 */
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  border-color: #B58282;
+  border-width: 12rpx;
+  border-style:solid;
+}
+.nickname{
+  display: flex;
+  justify-content: center;
+}
+
+.touimage_background{
+  margin: 0 auto;  
+  justify-content: center;
+  height: 200rpx;
+}
+.zhanwei{
+  height:100rpx;
+}
+
+.button_zhanwei{
+  height:40rpx;
+}
+.button_zhanwei1{
+  height:10rpx;
+}
+
+.xunzhang{
+  height:160rpx;
+  width:160rpx;
+  border-radius: 50%;
+  background-color: rgb(114, 87, 87);
+  position:-ms-page;
+  top: 0rpx;
+  left: 0rpx;
+}
+.xunzhang_1{
+  height:80rpx;
+  width:80rpx;
+  border-radius: 50%;
+  background-color: rgb(114, 87, 87);
+  position:-ms-page;
+  top: 80rpx;
+}
+.xunzhang_2{
+  height:80rpx;
+  width:80rpx;
+  border-radius: 50%;
+  background-color: rgb(114, 87, 87);
+  position:-ms-page;
+  top: 80rpx;
+}
+.xunzhang_3{
+  height:80rpx;
+  width:80rpx;
+  border-radius: 50%;
+  background-color: rgb(114, 87, 87);
+  position:-ms-page;
+  top: 80rpx;
+}
+.xunzhang_4{
+  height:80rpx;
+  width:80rpx;
+  border-radius: 50%;
+  background-color: rgb(114, 87, 87);
+  position:-ms-page;
+  top: 80rpx;
+}
+.button_bgd{
+    height:80%;
+    width:70%;
+    position:-ms-page;
+    top: 250rpx;
+    left: 0rpx;
+    display: flex;
+  }
+
+  
+
+

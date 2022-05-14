@@ -1,0 +1,9 @@
+<view class="boundSearch" >
+<image src='/images/washromm_1.png' class="test" mode="widthFix" style='width:60rpx' bindtap="searchPublicPlace1"></image>
+<view class="zhanwei"></view>
+<image src='/images/louti.png' class="test" mode="widthFix" style='width:60rpx' bindtap="searchPublicPlace2"></image>
+<view class="zhanwei"></view>
+<image src='/images/exit.png' class="test" mode="widthFix" style='width:60rpx' bindtap="searchPublicPlace3"></image>
+<view class="zhanwei"></view>
+<image src='/images/go.png' class="test" mode="widthFix" style='width:60rpx' bindtap="searchPublicPlace4"></image>
+</view>    

@@ -1,0 +1,8 @@
+<!-- index.wxml -->
+<scroll-view scroll-y="true">
+  <view wx:for="{{demoList}}" wx:key="id">
+    <view data-id="{{item.id}}" class="list-item" bindtap="toDemo">
+      {{item.name}}
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,47 @@
+<!-- pages/FMSearchAnalysisBaseInfo/index.wxml -->
+<view class="container">
+  <!-- 加载地图容器 -->
+  <canvas type="webgl" id="fengMap" style="width: 100%; height: 100%;" disable-scroll bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
+  <!-- 2d画布 -->
+  <canvas type="2d" id="temp"></canvas>
+  <!-- 搜索页 -->
+  <view class="searchContainer {{isSearchPage ? 'searchPage' : ''}}" wx:if="{{mapLoaded}}">
+    <!-- 搜索框 -->
+    <view class="search">
+      <icon type="{{isSearchPage ? 'cancel' : 'search'}}" color="#999" bindtap="backToMap" />
+      <input placeholder="搜索" bindinput="bindSearchInput" bindtap="bindClickInput" value="{{searchValue}}" />
+    </view>
+    <!-- 分类搜索 -->
+    <view class="btnsType" hidden="{{searchValue !== ''}}" wx:if="{{isSearchPage}}">
+      <!-- 业务分类 -->
+      <text bindtap="searchByTypeID" data-type="170000" data-label="餐饮">餐饮</text>
+      <text bindtap="searchByTypeID" data-type="150000" data-label="购物">购物</text>
+      <!-- 公共设施分类 -->
+      <text bindtap="searchByTypeID" data-type="200004" data-label="直梯">直梯</text>
+      <text bindtap="searchByTypeID" data-type="200002" data-label="卫生间">卫生间</text>
+    </view>
+    <!-- </view> -->
+    <!-- 搜索结果 -->
+    <view class="searchResult" hidden="{{searchResult.length === 0}}" wx:if="{{isSearchPage}}">
+      <scroll-view scroll-y="true" class="hotwords">
+        <view wx:for="{{searchResult}}" wx:key="FID" data-fid="{{item.FID}}" bindtap="searchByFID">
+          {{item.name}}
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  <!-- 分类搜索结果 -->
+  <view class="searchType" wx:if="{{isTypePage}}">
+    <view class="searchLabel">
+      <view class="back" bindtap="backToSearch"></view>
+      <view>{{typeText}}</view>
+    </view>
+    <view class="searchResult">
+      <scroll-view scroll-y="true" class="hotwords">
+        <view wx:for="{{typeResult}}" wx:key="FID" data-fid="{{item.FID}}" bindtap="searchByFID">
+          {{item.name}}
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

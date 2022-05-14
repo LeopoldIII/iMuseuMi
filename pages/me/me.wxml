@@ -1,0 +1,91 @@
+<view class="zhanwei"></view>
+<view >
+<view class ="touimage_background">
+ <image class="touimage" src='{{userInfo.avatarUrl}}'></image>
+</view>
+</view>
+<view class="button_zhanwei1"></view>
+<view class="button_zhanwei1"></view>
+<view class="button_zhanwei1"></view>
+<view class="nickname">{{userInfo.nickName}}</view>
+<view class="zhanwei"></view>
+
+
+<view class="button-area" >
+    <image src= '/images/bgd1.png' class="button-area" mode="widthFix"> </image>
+    <button class="circle_5" hover-class="circle_5_after">游览历史</button>
+    <view class="button_zhanwei1"></view>
+    <button class="circle_4" hover-class="circle_4_after">周边商城</button>
+</view>
+
+
+
+    <view class="page-section">
+      <view class="flex-wrp" style="flex-direction:column;">
+       <view class="button_zhanwei"></view>
+        <view class="flex-item flex-item-V demo-text-1">
+          <button class="xunzhang">
+          </button>
+          <view class="button_bgd">
+          <button class="xunzhang_1" bindtap='btnTap_1'></button>
+          <button class="xunzhang_2" bindtap='btnTap_2'></button>
+          <button class="xunzhang_3" bindtap='btnTap_3'></button>
+          <button class="xunzhang_4" bindtap='btnTap_4'></button>
+          </view>
+        </view>
+        <modal title="成就1" cancel-text="回退" confire_text="确定"
+        hidden="{{mHidden_1}}" bindconfirm="changeModel_1" bindcancel="modelCancel_1">
+        成就1
+        <video src='/images/lhm.mp4'></video>
+        </modal>
+
+        <modal title="弹出框" cancel-text="关闭" confire_text="确定"
+        hidden="{{mHidden_2}}" bindconfirm="changeModel_2" bindcancel="modelCancel_2">
+        文字显示位置2
+        </modal>
+
+        <modal title="弹出框" cancel-text="关闭" confire_text="确定"
+        hidden="{{mHidden_3}}" bindconfirm="changeModel_3" bindcancel="modelCancel_3">
+        文字显示位置3
+        </modal>
+
+        <modal title="弹出框" cancel-text="关闭" confire_text="确定"
+        hidden="{{mHidden_4}}" bindconfirm="changeModel_4" bindcancel="modelCancel_4">
+        文字显示位置4
+        </modal>
+
+
+        <view class="button_zhanwei"></view>
+        <view class="flex-item flex-item-V demo-text-1">
+          <button class="xunzhang">
+          </button>
+          <view class="button_bgd">
+          <button class="xunzhang_1"></button>
+          <button class="xunzhang_2"></button>
+          <button class="xunzhang_3"></button>
+          <button class="xunzhang_4"></button>
+          </view>
+        </view>
+
+
+        <view class="button_zhanwei"></view>
+        <view class="flex-item flex-item-V demo-text-1">
+          <button class="xunzhang">
+          </button>
+          <view class="button_bgd">
+          <button class="xunzhang_1"></button>
+          <button class="xunzhang_2"></button>
+          <button class="xunzhang_3"></button>
+          <button class="xunzhang_4"></button>
+          </view>
+        </view>
+        <view class="button_zhanwei"></view>
+      </view>
+    </view>
+
+
+
+
+
+
+

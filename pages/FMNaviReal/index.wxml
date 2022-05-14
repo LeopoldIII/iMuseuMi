@@ -1,0 +1,23 @@
+<!-- pages/FMNaviReal/index.wxml -->
+<view class="container">
+    <!-- 加载地图容器 -->
+    <canvas type="webgl" id="fengMap" style="width: 100%; height: 100%;" disable-scroll bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+        <!-- 楼层控件二 按钮型楼层控件 -->
+        <FMButtonGroupsControl id="buttonGroupsControl" wx:if="{{mapLoaded == true }}" focusGroupID="{{focusGroupID}}" groupIDs="{{mapGroupIDs}}" showBtnCount="3" expand="{{expand}}" enableExpand="{{enableExpand}}" bind:switchGroup="switchGroup" />
+    </canvas>
+    <!-- 2d画布 -->
+    <canvas type="2d" id="temp"></canvas>
+    <!-- 按钮组 -->
+    <view class="btnsGroup" wx:if="{{mapLoaded}}">
+        <button type="default" size="mini" bindtap="startNavi">开始导航</button>
+    </view>
+    <!-- 距离终点时间、距离信息展示 -->
+    <view class="description" wx:if="{{mapLoaded}}">
+        <block wx:if="{{!naviStoped}}">
+            <view>距终点：{{distance}}米</view>
+            <view>大约需要：{{minutes}} 分钟 {{seconds}} 秒</view>
+            <view>路线提示：{{prompt}}</view>
+        </block>
+        <view wx:else>导航结束！</view>
+    </view>
+</view>

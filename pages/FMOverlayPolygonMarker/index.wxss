@@ -1,0 +1,18 @@
+/* pages/FMOverlayPolygonMarker/index.wxss */
+.container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.btnsGroup {
+    position: absolute;
+    right: 40rpx;
+    top: 40rpx;
+    z-index: 1;
+}
+
+.btnsGroup button {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+}

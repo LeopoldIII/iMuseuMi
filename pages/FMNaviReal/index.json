@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "实时导航",
+  "usingComponents": {
+    "FMButtonGroupsControl": "../../component/FMButtonGroupsControl/FMButtonGroupsControl"
+  }
+}
