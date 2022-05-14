@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/FMNavigationBase/index",
+    "pages/FMMapBasic/index",
+    "pages/index/index",
+    "pages/FMController/index",
+    "pages/FMEvent/index", 
+    "pages/FMOverlayImageMarker/index",
+    "pages/FMOverlayTextMarker/index",
+    "pages/FMOverlayPolygonMarker/index",
+    "pages/FMOverlayLineMarker/index",
+    "pages/FMSearchAnalysisBaseInfo/index",
+    "pages/FMSearchAnalysisBound/index",
+    "pages/FMLocationMarker/index",
+    "pages/FMNaviReal/i ndex",
+    "pages/me/me",
+    "pages/page3/page3"
+  ],
+  
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#820909",
+    "navigationBarTitleText": "iMuseuMi",
+    "navigationBarTextStyle": "white"
+  },
+
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+
+    "color":"#FFFFFF",
+    "selectedColor":"#C0C0C0",
+    "backgroundColor":"#820909",
+    "borderStyle": "black",
+  
+      "list": [{
+        "pagePath":"pages/FMNavigationBase/index",
+        "text": "地图",
+        "iconPath":"images/jiantou.png",
+        "selectedIconPath":"images/jiantou_after.png"
+      }, 
+      {
+        "pagePath": "pages/page3/page3",
+        "text": "AR互动",
+        "iconPath":"images/camera.png",
+        "selectedIconPath":"images/camera_after.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath":"images/me.png",
+        "selectedIconPath":"images/me_after.png"
+      }]}
+
+}
